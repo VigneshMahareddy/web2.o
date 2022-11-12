@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Grid</title>
+    <style type="text/CSS">
+        .one{grid-area: header;}
+        .two{grid-area: left;}
+        .three{grid-area: center;}    
+        .four{grid-area:right;}   
+        .five{grid-area: footer;}
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            
+            'left center center center right right '
+           
+            'left footer footer footer footer footer';
+            gap: 20px;
+            padding: 8px;
+
+        }
+         .grid-container> div{background-color: rgb(2, 103, 2);
+              text-align: center;
+              font-size: 55px;
+              padding: 20px 0px;}   
+            </style>
+    </head>
+    <body>
+        <h1>Learning Grid</h1>
+        <p>From Nov 15 we have Mid-term exams</p>
+    <div Class="grid-container">
+        <div class="one">About sasi</div>
+        <div class="two">kassi kapoor</div>
+        <div class="three">sulli leni sasi</div>
+        <div class="four">pedda puku sasi</div>
+        <div class="five">kamam na koduko</div>
+        </div>
+    </body>
+</html>
